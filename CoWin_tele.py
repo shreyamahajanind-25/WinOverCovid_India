@@ -15,7 +15,7 @@ def fetch_data_from_cowin(district_id):
 	final_url = base_cowin_url+query_params
 	response = requests.get(final_url)
 	extract_availability_data(response)
-	# print(response.text)
+	
 
 
 def fetch_data_for_state(district_ids):
