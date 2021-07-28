@@ -1,4 +1,5 @@
 import requests
+import time
 from datetime import datetime
 
 base_cowin_url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict"
@@ -43,3 +44,4 @@ def send_message_telegram(message):
 
 if __name__ == "__main__":
 	fetch_data_for_state(tricity_ids)
+	time.sleep(60*60)
